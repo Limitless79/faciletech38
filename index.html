@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FACILE TECH 38 – Assistance numérique pour seniors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- 🧠 SEO & Référencement local -->
+  <meta name="description" content="FACILE TECH 38 – Assistance informatique à domicile pour seniors à Grenoble. Dépannage, formation, installation et conseils numériques, avec patience et bienveillance.">
+  <meta name="keywords" content="aide informatique Grenoble, formation ordinateur senior, dépannage PC à domicile, assistance numérique, Facile Tech 38">
+  <meta property="og:title" content="FACILE TECH 38 – Assistance informatique pour seniors à Grenoble">
+  <meta property="og:description" content="Apprenez, dépannez ou installez votre matériel en toute confiance avec FACILE TECH 38, spécialiste des seniors.">
+  <meta property="og:image" content="https://facile-tech.fr/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <style>
+    body { font-family: 'Roboto', sans-serif; font-size: 17px; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-fadeInUp { animation: fadeInUp 0.8s ease-out forwards; }
+
+    /* Animations Hero */
+    @keyframes fadeUp { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes bounceIn { 0% { transform: scale(0.9); opacity: 0; } 60% { transform: scale(1.05); opacity: 1; } 100% { transform: scale(1); } }
+    .animate-heroFadeIn { animation: fadeUp 0.8s ease-out forwards; }
+    .animate-slideUp { animation: fadeUp 0.8s ease-out forwards; }
+    .animate-bounceIn { animation: bounceIn 0.8s ease-out forwards; }
+    [animation-delay] { animation-delay: var(--delay); }
+
+    /* Zoom doux au survol */
+    .group:hover img { transform: scale(1.05); }
+
+    /* Styles accessibilité (focus visibles) */
+    a:focus, button:focus {
+      outline: 2px solid #60A5FA;
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+
+<body class="bg-[#E0F2FE] text-gray-800">
+
+  <!-- Header -->
+<!-- Header -->
+<header class="bg-[#1E3A8A] shadow-md sticky top-0 z-50">
+  <div class="container mx-auto flex flex-col md:flex-row md:items-center justify-between py-3 px-4 space-y-2 md:space-y-0">
+   <h1 class="text-xl font-bold text-white flex flex-col md:flex-row md:items-center gap-2 leading-tight">
+  <span class="flex items-center gap-2">
+    <span class="text-2xl">💻</span> FACILE TECH 38
+  </span>
+  <span class="text-sm font-normal text-white md:ml-4 md:mt-0">
+    Assistance informatique pour seniors
+  </span>
+</h1>
+
+    <nav class="flex space-x-6 items-center">
+      <a href="#news-section" class="text-white font-medium hover:text-[#93C5FD] transition focus:ring-2 focus:ring-blue-300">Services</a>
+      <a href="#tarifs-section" class="text-white font-medium hover:text-[#93C5FD] transition focus:ring-2 focus:ring-blue-300">Tarifs</a>
+      <a href="#carte-section" class="text-white font-medium hover:text-[#93C5FD] transition focus:ring-2 focus:ring-blue-300">Zone</a>
+	   <a href="#contact" class="text-white font-medium hover:text-[#93C5FD] transition focus:ring-2 focus:ring-blue-300">Contact</a>
+	  <a href="tel:06XXXXXXXX" class="text-white font-semibold hover:text-[#93C5FD] transition flex items-center gap-1 focus:ring-2 focus:ring-blue-300">
+        📞 <span class="hidden sm:inline">06 XX XX XX XX</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+
+  <!-- Hero Section -->
+  <section class="min-h-[80vh] flex flex-col md:flex-row items-center justify-between px-8 md:px-16 bg-white pt-12 md:pt-0 scroll-mt-20 overflow-hidden">
+    <div class="max-w-xl md:w-1/2 space-y-6 opacity-0 transform translate-y-6 animate-heroFadeIn">
+      <h2 class="text-4xl md:text-5xl font-bold text-[#0A192F]">
+        L’informatique <span class="text-[#2563EB]">facile</span>,<br>
+        humaine et <span class="text-[#2563EB]">à votre rythme</span>
+      </h2>
+
+      <p class="text-lg text-gray-700 leading-relaxed">
+        Vous souhaitez utiliser votre ordinateur, tablette ou smartphone en toute confiance ?  
+        <strong class="text-[#1E3A8A]">FACILE TECH 38</strong> vous accompagne pas à pas, à domicile,  
+        pour apprendre, dépanner ou simplement vous simplifier la vie numérique.  
+      </p>
+
+      <p class="text-[#2563EB] font-medium italic">
+        Avec patience, pédagogie et bienveillance — pour que la technologie devienne un plaisir 💙
+      </p>
+
+      <a href="#news-section"
+         class="inline-block bg-[#2563EB] hover:bg-[#1E3A8A] text-white font-semibold py-3 px-8 rounded-full shadow-md transition transform hover:scale-105 duration-300 animate-bounceIn [animation-delay:0.8s] focus:ring-2 focus:ring-blue-300">
+        Découvrir nos services
+      </a>
+    </div>
+
+    <div class="md:w-1/2 mt-10 md:mt-0 opacity-0 transform translate-y-6 animate-heroFadeIn [animation-delay:1s] group">
+      <img src="./hero.jpg" alt="Seniors accompagnés pour l’informatique avec FACILE TECH 38"
+           class="rounded-2xl shadow-lg w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="news-section" class="py-16 px-4 bg-white opacity-0">
+    <div class="container mx-auto">
+      <div class="mb-12 text-center">
+        <h3 class="text-3xl md:text-4xl font-bold text-[#1E3A8A]">
+          Nos <span class="text-[#2563EB]">services</span>
+        </h3>
+        <div class="mt-3 flex justify-center">
+          <span class="w-16 h-1 bg-[#2563EB] rounded-full"></span>
+        </div>
+        <p class="text-gray-500 mt-3 text-sm md:text-base">
+          Une aide informatique à domicile, claire et efficace.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <!-- Dépannage -->
+        <div class="p-6 border rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 animate-fadeInUp" style="animation-delay: 0.1s;">
+          <img src="./depannage.jpg" alt="Dépannage PC" class="w-full h-40 object-cover rounded-md mb-4">
+          <h4 class="font-bold text-lg mb-2 text-[#1E3A8A] text-center">🛠️ Dépannage informatique</h4>
+          <p class="text-sm text-gray-600 text-center">PC lent, bugs, virus, problème d’imprimante ou de Wi-Fi… Nous trouvons et réparons la panne rapidement. Diagnostic clair et solutions adaptées.</p>
+        </div>
+
+        <!-- Formation -->
+        <div class="p-6 border rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 animate-fadeInUp" style="animation-delay: 0.2s;">
+          <img src="./formation.jpg" alt="Formation numérique" class="w-full h-40 object-cover rounded-md mb-4">
+          <h4 class="font-bold text-lg mb-2 text-[#1E3A8A] text-center">📚 Formation personnalisée</h4>
+          <p class="text-sm text-gray-600 text-center">Apprenez à utiliser votre ordinateur, smartphone ou tablette à votre rythme. Messagerie, photos, appels vidéo, démarches en ligne : nous avançons pas à pas, avec patience et pédagogie.</p>
+        </div>
+
+        <!-- Installation -->
+        <div class="p-6 border rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 animate-fadeInUp" style="animation-delay: 0.3s;">
+          <img src="./installation.jpg" alt="Installation équipements" class="w-full h-40 object-cover rounded-md mb-4">
+          <h4 class="font-bold text-lg mb-2 text-[#1E3A8A] text-center">🔌 Installation & configuration</h4>
+          <p class="text-sm text-gray-600 text-center">Mise en place de votre box Internet, imprimantes, logiciels, comptes mails ou sauvegardes. Nous installons vos équipements et vous expliquons leur fonctionnement simplement.</p>
+        </div>
+
+        <!-- Maintenance -->
+        <div class="p-6 border rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 animate-fadeInUp" style="animation-delay: 0.4s;">
+          <img src="./maintenance.jpg" alt="Maintenance" class="w-full h-40 object-cover rounded-md mb-4">
+          <h4 class="font-bold text-lg mb-2 text-[#1E3A8A] text-center">🧹 Optimisation & maintenance</h4>
+          <p class="text-sm text-gray-600 text-center">Nettoyage complet du système, suppression des fichiers inutiles, accélération de l’ordinateur et mises à jour de sécurité. Pour un ordinateur plus rapide et qui dure plus longtemps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pourquoi nous choisir -->
+  <section class="py-16 px-6 bg-[#F8FAFC]">
+    <div class="container mx-auto">
+      <div class="mb-12 text-center">
+        <h3 class="text-3xl md:text-4xl font-bold text-[#1E3A8A]">
+          Pourquoi choisir <span class="text-[#2563EB]">FACILE TECH 38</span> ?
+        </h3>
+        <div class="mt-3 flex justify-center">
+          <span class="w-16 h-1 bg-[#2563EB] rounded-full"></span>
+        </div>
+        <p class="text-gray-500 mt-3 text-sm md:text-base">
+          Des solutions numériques simples, humaines et adaptées aux seniors.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Accompagnement humain -->
+        <div class="p-6 bg-white rounded-xl shadow-md text-center hover:shadow-lg transition">
+          <div class="text-4xl mb-4">🤝</div>
+          <h4 class="font-bold text-lg text-[#1E3A8A] mb-2">Accompagnement humain</h4>
+          <p class="text-sm text-gray-600">Patience, pédagogie et bienveillance pour avancer à votre rythme.</p>
+        </div>
+
+        <!-- Simplicité -->
+        <div class="p-6 bg-white rounded-xl shadow-md text-center hover:shadow-lg transition">
+          <div class="text-4xl mb-4">✨</div>
+          <h4 class="font-bold text-lg text-[#1E3A8A] mb-2">Simplicité</h4>
+          <p class="text-sm text-gray-600">Des explications claires, sans jargon technique, adaptées aux seniors.</p>
+        </div>
+
+        <!-- Expérience -->
+        <div class="p-6 bg-white rounded-xl shadow-md text-center hover:shadow-lg transition">
+          <div class="text-4xl mb-4">👨‍🔧</div>
+          <h4 class="font-bold text-lg text-[#1E3A8A] mb-2">Expérience</h4>
+          <p class="text-sm text-gray-600">De nombreux dépannages et accompagnements réussis auprès de seniors, avec des besoins variés et toujours une solution adaptée.</p>
+        </div>
+
+        <!-- Tarifs clairs -->
+        <div class="p-6 bg-white rounded-xl shadow-md text-center hover:shadow-lg transition">
+          <div class="text-4xl mb-4">💶</div>
+          <h4 class="font-bold text-lg text-[#1E3A8A] mb-2">Tarifs clairs</h4>
+          <p class="text-sm text-gray-600">Des forfaits simples, transparents et sans mauvaises surprises.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Tarifs Section -->
+  <section id="tarifs-section" class="py-16 px-4 bg-[#E0F2FE] opacity-0">
+    <div class="container mx-auto">
+      <div class="mb-12 text-center">
+        <h3 class="text-3xl md:text-4xl font-bold text-[#1E3A8A]">
+          Nos <span class="text-[#2563EB]">tarifs pour les seniors</span>
+        </h3>
+        <div class="mt-3 flex justify-center">
+          <span class="w-16 h-1 bg-[#2563EB] rounded-full"></span>
+        </div>
+        <p class="text-gray-500 mt-3 text-sm md:text-base">
+          Des forfaits clairs, adaptés à vos besoins, sans mauvaises surprises.
+        </p>
+      </div>
+
+      <p class="text-center text-sm text-gray-600 max-w-2xl mx-auto mb-8">
+        Toutes nos prestations sont réalisées <span class="font-semibold">à domicile (Grenoble +15 km).</span> 
+         
+        Les forfaits incluent entre <span class="font-semibold">1h et 1h30 d’intervention</span>.  
+        <span class="italic text-gray-500">En cas de dépassement : +20 € par 30 min supplémentaire.</span>
+      </p>
+
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <!-- Dépannage PC -->
+        <div class="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 hover:shadow-lg transition">
+          <div class="text-4xl text-[#2563EB]">🛠️</div>
+          <div>
+            <h4 class="text-xl font-bold text-[#1E3A8A] mb-1">
+              Dépannage PC <span class="text-[#2563EB]">– 69 €</span>
+            </h4>
+            <p class="text-sm text-gray-600">À domicile ou en atelier – Diagnostic et réparation de lenteurs, bugs ou virus (1h à 1h30).</p>
+            <p class="text-xs text-gray-400 mt-1">+20 € / 30 min supplémentaire</p>
+          </div>
+        </div>
+
+        <!-- Formation personnalisée -->
+        <div class="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 hover:shadow-lg transition">
+          <div class="text-4xl text-[#2563EB]">📚</div>
+          <div>
+            <h4 class="text-xl font-bold text-[#1E3A8A] mb-1">
+              Formation personnalisée <span class="text-[#2563EB]">– 55 €</span>
+            </h4>
+            <p class="text-sm text-gray-600">Apprenez à utiliser votre ordinateur, smartphone ou tablette à votre rythme (1h).</p>
+          </div>
+        </div>
+
+        <!-- Installation & configuration -->
+        <div class="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 hover:shadow-lg transition">
+          <div class="text-4xl text-[#2563EB]">🔌</div>
+          <div>
+            <h4 class="text-xl font-bold text-[#1E3A8A] mb-1">
+              Installation & configuration <span class="text-[#2563EB]">– 59 €</span>
+            </h4>
+            <p class="text-sm text-gray-600">Mise en place de votre box Internet, imprimante, logiciels, boîte mail, sauvegarde...</p>
+          </div>
+        </div>
+
+        <!-- Optimisation & maintenance -->
+        <div class="bg-white p-6 rounded-xl shadow-md flex items-start gap-4 hover:shadow-lg transition">
+          <div class="text-4xl text-[#2563EB]">🧹</div>
+          <div>
+            <h4 class="text-xl font-bold text-[#1E3A8A] mb-1">
+              Optimisation & maintenance <span class="text-[#2563EB]">– 69 €</span>
+            </h4>
+            <p class="text-sm text-gray-600">Nettoyage complet de l’ordinateur, suppression des fichiers inutiles, optimisation des performances et mises à jour de sécurité (1h à 1h30).</p>
+            <p class="text-xs text-gray-400 mt-1">+20 € / 30 min supplémentaire</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Section Avis Clients -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto text-center">
+    <h3 class="text-3xl md:text-4xl font-bold mb-4">
+      Ils nous font <span class="text-[#2563EB]">confiance</span>
+    </h3>
+    <div class="flex justify-center mb-8">
+      <span class="w-16 h-1 bg-[#2563EB] rounded-full"></span>
+    </div>
+
+    <!-- Carrousel -->
+    <div class="relative overflow-hidden group">
+      <div id="carousel-track" class="flex space-x-4">
+        <!-- Avis -->
+        <div class="flex-shrink-0 w-[90vw] max-w-sm p-6 bg-[#F8FAFC] rounded-xl shadow-md text-gray-700">
+          <p class="italic break-words">“Très pédagogue et patient, j’ai enfin compris comment gérer mes photos !”</p>
+          <p class="mt-3 font-semibold text-[#2563EB]">– Marie, Seyssins</p>
+        </div>
+
+        <div class="flex-shrink-0 w-[90vw] max-w-sm p-6 bg-[#F8FAFC] rounded-xl shadow-md text-gray-700">
+          <p class="italic break-words">“Une vraie aide pour mes démarches administratives en ligne. Merci !”</p>
+          <p class="mt-3 font-semibold text-[#2563EB]">– Paul, Grenoble</p>
+        </div>
+
+        <div class="flex-shrink-0 w-[90vw] max-w-sm p-6 bg-[#F8FAFC] rounded-xl shadow-md text-gray-700">
+          <p class="italic break-words">“Ponctuel, efficace et très sympathique. Je recommande vivement.”</p>
+          <p class="mt-3 font-semibold text-[#2563EB]">– Claire, Échirolles</p>
+        </div>
+
+        <div class="flex-shrink-0 w-[90vw] max-w-sm p-6 bg-[#F8FAFC] rounded-xl shadow-md text-gray-700">
+          <p class="italic break-words">“Grâce à lui, j’utilise enfin ma tablette pour voir mes petits-enfants !”</p>
+          <p class="mt-3 font-semibold text-[#2563EB]">– Jean, Meylan</p>
+        </div>
+
+        <div class="flex-shrink-0 w-[90vw] max-w-sm p-6 bg-[#F8FAFC] rounded-xl shadow-md text-gray-700">
+          <p class="italic break-words">“Très clair dans ses explications. Le numérique devient simple.”</p>
+          <p class="mt-3 font-semibold text-[#2563EB]">– Sophie, Sassenage</p>
+        </div>
+
+        <div class="flex-shrink-0 w-[90vw] max-w-sm p-6 bg-[#F8FAFC] rounded-xl shadow-md text-gray-700">
+          <p class="italic break-words">“Mon ordinateur remarche comme neuf ! Intervention rapide et efficace.”</p>
+          <p class="mt-3 font-semibold text-[#2563EB]">– Michel, Saint-Égrève</p>
+        </div>
+
+        <div class="flex-shrink-0 w-[90vw] max-w-sm p-6 bg-[#F8FAFC] rounded-xl shadow-md text-gray-700">
+          <p class="italic break-words">“Une approche humaine et bienveillante. Parfait pour les seniors !”</p>
+          <p class="mt-3 font-semibold text-[#2563EB]">– Hélène, Fontaine</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Texte toujours lisible */
+p {
+  white-space: normal !important;
+  overflow: visible !important;
+  word-break: break-word;
+}
+
+/* Animation fluide */
+#carousel-track {
+  will-change: transform;
+  animation: scroll-linear 20s linear infinite;
+}
+
+@keyframes scroll-linear {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Pause au survol */
+.group:hover #carousel-track {
+  animation-play-state: paused;
+}
+
+#carousel-track {
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+</style>
+
+<script>
+// 💡 Carrousel infini fluide sans coupure
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.getElementById("carousel-track");
+
+  // 1️⃣ Duplique dynamiquement les avis
+  const items = Array.from(track.children);
+  const clone = items.map(el => el.cloneNode(true));
+  clone.forEach(el => track.appendChild(el));
+
+  // 2️⃣ Ajuste la vitesse selon la largeur de l’écran
+  function adjustCarouselSpeed() {
+    const width = window.innerWidth;
+    let duration = 20; // base desktop
+
+    if (width < 1200) duration = 18;
+    if (width < 992) duration = 16;
+    if (width < 768) duration = 14;
+    if (width < 500) duration = 12;
+
+    track.style.animationDuration = duration + "s";
+  }
+
+  adjustCarouselSpeed();
+  window.addEventListener("resize", adjustCarouselSpeed);
+});
+</script>
+
+
+
+  <!-- 🗺️ Carte interactive – Zones d’intervention -->
+  <section id="carte-section" class="py-16 bg-[#F8FAFC] text-center">
+    <h3 class="text-3xl font-bold text-[#1E3A8A] mb-6">
+      Nous intervenons autour de <span class="text-[#2563EB]">Grenoble</span>
+    </h3>
+	<div class="mt-3 flex justify-center">
+          <span class="w-16 h-1 bg-[#2563EB] rounded-full"></span>
+        </div>
+	<br>
+    <p class="text-gray-600 mb-8 max-w-xl mx-auto">
+      Nos interventions couvrent Grenoble et les communes environnantes (Échirolles, Meylan, Seyssins, Saint-Martin-d’Hères…).  
+      Déplacements inclus dans un rayon de 15 km.
+    </p>
+    <div class="rounded-xl overflow-hidden shadow-lg max-w-4xl mx-auto">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27776.953170765!2d5.713!3d45.188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af49bdfd3cf2d%3A0x408ab2ae4baee30!2sGrenoble!5e0!3m2!1sfr!2sfr!4v1234567890"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+	
+	  <!-- Image centrée -->
+     <br><br><div class="flex justify-center mb-6">
+      <img src="./grenoble.jpg" 
+           alt="Seniors accompagnés à Grenoble pour l’informatique avec FACILE TECH 38"
+           class="rounded-2xl shadow-lg max-w-full h-auto">
+    </div>
+
+   </section>
+
+  <!-- 📞 Appel à l’action -->
+  <section class="py-12 bg-[#2563EB] text-white text-center">
+    <h3 class="text-2xl font-bold mb-4">Besoin d’aide ou d’un conseil informatique ?</h3>
+    <p class="mb-6">Contactez-nous simplement pour un diagnostic ou un rendez-vous à domicile.</p>
+    <a href="tel:06XXXXXXXX"
+       class="bg-white text-[#2563EB] font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-[#F0F9FF] transition transform hover:scale-105 focus:ring-2 focus:ring-blue-300">
+      📞 06 XX XX XX XX
+    </a>
+	 </section>
+	 
+	 <!-- Section Contact -->
+<section id="contact" class="py-16 bg-[#F8FAFC]">
+  <div class="container mx-auto px-4 md:px-8">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
+      Contactez-<span class="text-[#2563EB]">nous</span>
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-10 bg-white shadow-lg rounded-2xl p-8 md:p-12">
+      <!-- Informations -->
+      <div>
+        <h3 class="text-2xl font-semibold mb-4 text-[#2563EB]">Informations</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Nous restons à votre disposition pour tout renseignement complémentaire du lundi au vendredi de 09h à 18h.
+        </p>
+
+        <div class="flex items-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#2563EB] mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M16 12l-4 4-4-4m8 0l-4-4-4 4" />
+          </svg>
+          <p class="text-gray-700">Email : <a href="mailto:contact@.fr" class="text-[#2563EB] hover:underline">contact@.fr</a></p>
+        </div>
+
+        <div class="flex items-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#2563EB] mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 5h2l3.6 7.59a1 1 0 00.9.41h7a1 1 0 00.9-.55l3.1-6.2A1 1 0 0019 5H5.21" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20h4" />
+          </svg>
+          <p class="text-gray-700">Téléphone : <a href="tel:+336000000000" class="text-[#2563EB] hover:underline">+33 6 00 00 00 00</a></p>
+        </div>
+      </div>
+
+      <!-- Formulaire -->
+      <form id="contactForm" class="space-y-5">
+        <div>
+          <label for="name" class="block text-gray-700 font-medium mb-2">Nom *</label>
+          <input id="name" name="name" type="text" required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:outline-none">
+        </div>
+
+        <div>
+          <label for="email" class="block text-gray-700 font-medium mb-2">Email *</label>
+          <input id="email" name="email" type="email" required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:outline-none">
+        </div>
+
+        <div>
+          <label for="message" class="block text-gray-700 font-medium mb-2">Message *</label>
+          <textarea id="message" name="message" rows="5" required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2563EB] focus:outline-none"></textarea>
+        </div>
+
+        <button type="submit"
+          class="w-full bg-[#2563EB] hover:bg-[#1E40AF] text-white font-semibold py-3 rounded-lg shadow-md transition">
+          Envoyer
+        </button>
+
+        <p id="formMessage" class="text-center text-sm mt-2"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+// 📨 GESTION DE L’ENVOI DU FORMULAIRE
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const formMessage = document.getElementById("formMessage");
+  const formData = new FormData(form);
+
+  try {
+    // ⚙️ Exemple d’envoi avec un endpoint Formspree (simple et gratuit)
+    const response = await fetch("https://formspree.io/f/yourFormID", {
+      method: "POST",
+      body: formData,
+      headers: { Accept: "application/json" },
+    });
+
+    if (response.ok) {
+      formMessage.textContent = "✅ Votre message a bien été envoyé !";
+      formMessage.className = "text-green-600 text-center mt-2";
+      form.reset();
+    } else {
+      formMessage.textContent = "❌ Une erreur est survenue. Veuillez réessayer.";
+      formMessage.className = "text-red-600 text-center mt-2";
+    }
+  } catch (error) {
+    formMessage.textContent = "⚠️ Erreur réseau. Vérifiez votre connexion.";
+    formMessage.className = "text-red-600 text-center mt-2";
+  }
+});
+</script>
+
+	 
+   <!-- Footer -->
+  <footer class="bg-[#0A192F] text-white py-12 relative">
+    <div class="container mx-auto grid md:grid-cols-3 gap-8 px-6 text-left">
+      <div>
+        <h5 class="font-bold text-lg mb-4 text-[#60A5FA] flex items-center gap-2">
+          💻 FACILE TECH 38
+        </h5>
+        <p class="text-sm text-gray-300">
+          Service d’assistance informatique à domicile dédié aux seniors.<br>Simple, rassurant et humain.
+        </p>
+      </div>
+      <div>
+        <h5 class="font-bold text-lg mb-4 text-[#60A5FA]">Zones d’intervention</h5>
+        <ul class="text-sm text-gray-300 space-y-1">
+          <li>Grenoble et alentours : Échirolles, Meylan, Seyssins, Saint-Martin-d’Hères</li>
+          <li>Déplacements inclus jusqu’à 15 km.</li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-bold text-lg mb-4 text-[#60A5FA]">Contact & rendez-vous</h5>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li>📞 06 XX XX XX XX</li>
+          <li>🌐 <a href="https://facile-tech.fr" class="hover:text-[#60A5FA]">facile-tech.fr</a></li>
+          <li>✉️ <a href="mailto:contact@facile-tech.fr" class="hover:text-[#60A5FA]">contact@facile-tech.fr</a></li>
+        </ul>
+      </div>
+    </div>
+
+<!-- Bouton Haut de page -->
+<button id="btnTop" aria-label="Retour en haut"
+  class="fixed bottom-6 right-6 z-50 bg-[#2563EB] text-white p-3 rounded-full shadow-lg transition hover:bg-[#1E40AF] focus:outline-none">
+  <!-- Icône flèche (SVG) -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+  </svg>
+</button>
+
+<script>
+// 🔼 Scroll vers le haut au clic
+document.getElementById("btnTop").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// 👀 Affiche/cache le bouton selon la position
+window.addEventListener("scroll", () => {
+  const btn = document.getElementById("btnTop");
+  if (window.scrollY > 300) {
+    btn.style.display = "flex";
+  } else {
+    btn.style.display = "none";
+  }
+});
+</script>
+
+<style>
+/* ✅ Correction pour éviter que le bouton cache le footer */
+@media (max-width: 768px) {
+  #btnTop {
+    bottom: 80px; /* on le remonte un peu au-dessus du footer */
+  }
+}
+
+/* Animation d’apparition douce */
+#btnTop {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+</style>
+
+
+
+    <div class="mt-10 text-center text-xs text-gray-400 border-t border-gray-700 pt-4">
+      © 2025 FACILE TECH 38 – Tous droits réservés.
+    </div>
+  </footer>
+
+  <!-- Animations au scroll -->
+  <script>
+    const sections = document.querySelectorAll('#news-section, #tarifs-section, #carte-section, #contact');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fadeInUp');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
