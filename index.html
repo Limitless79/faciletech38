@@ -45,14 +45,16 @@
 <!-- Header -->
 <header class="bg-[#1E3A8A] shadow-md sticky top-0 z-50">
   <div class="container mx-auto flex flex-col md:flex-row md:items-center justify-between py-3 px-4 space-y-2 md:space-y-0">
-   <h1 class="text-xl font-bold text-white flex flex-col md:flex-row md:items-center gap-2 leading-tight">
-  <span class="flex items-center gap-2">
-    <span class="text-2xl">💻</span> FACILE TECH 38
-  </span>
-  <span class="text-sm font-normal text-white md:ml-4 md:mt-0">
-    Assistance informatique pour seniors
-  </span>
-</h1>
+
+    <!-- Bloc logo + titre cliquable -->
+    <h1 id="logo" class="text-xl font-bold text-white flex flex-col md:flex-row md:items-center gap-2 leading-tight cursor-pointer select-none transition-transform duration-200 hover:scale-[1.02]">
+      <span class="flex items-center gap-2">
+        <span class="text-2xl">💻</span> FACILE TECH 38
+      </span>
+      <span class="text-sm font-normal text-white md:ml-4 md:mt-0">
+        Assistance informatique pour seniors
+      </span>
+    </h1>
 
     <nav class="flex space-x-6 items-center">
       <a href="#news-section" class="text-white font-medium hover:text-[#93C5FD] transition focus:ring-2 focus:ring-blue-300">Services</a>
@@ -92,10 +94,27 @@
       </a>
     </div>
 
-    <div class="md:w-1/2 mt-10 md:mt-0 opacity-0 transform translate-y-6 animate-heroFadeIn [animation-delay:1s] group">
-      <img src="./hero.jpg" alt="Seniors accompagnés pour l’informatique avec FACILE TECH 38"
-           class="rounded-2xl shadow-lg w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+	
+<div class="md:w-1/2 mt-10 md:mt-0 animate-heroFadeIn [animation-delay:1s]">
+  <section class="relative w-full h-[400px] sm:h-[450px] md:h-[550px] lg:h-[600px] rounded-2xl overflow-hidden shadow-lg">
+    <!-- Images du diaporama -->
+    <div id="hero-slideshow" class="relative w-full h-full">
+      <img src="images/hero.jpg" 
+           alt="Assistance informatique à domicile" 
+           class="slide w-full h-full object-cover opacity-100 transition-opacity duration-1000 block">
+      <img src="images/hero1.jpg" 
+           alt="Aide informatique pour seniors" 
+           class="slide w-full h-full object-cover opacity-0 absolute inset-0 transition-opacity duration-1000">
+      <img src="images/hero2.jpg" 
+           alt="Dépannage et formation informatique" 
+           class="slide w-full h-full object-cover opacity-0 absolute inset-0 transition-opacity duration-1000">
     </div>
+  </section>
+</div>
+
+
+
+
   </section>
 
   <!-- Services Section -->
@@ -554,7 +573,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
         <h5 class="font-bold text-lg mb-4 text-[#60A5FA]">Contact & rendez-vous</h5>
         <ul class="text-sm text-gray-300 space-y-2">
           <li>📞 06 XX XX XX XX</li>
-          <li>🌐 <a href="https://www.faciletech38.fr/" class="hover:text-[#60A5FA]">https://www.faciletech38.fr/</a></li>
+          <li>🌐 <a href="https://www.faciletech38.fr/" class="hover:text-[#60A5FA]">https://www.faciletech38.fr</a></li>
           <li>✉️ <a href="mailto:contact@facile-tech.fr" class="hover:text-[#60A5FA]">contact@faciletech38.fr</a></li>
         </ul>
       </div>
@@ -603,11 +622,34 @@ window.addEventListener("scroll", () => {
 }
 </style>
 
+<!-- <footer class="border-t border-gray-700 mt-10 pt-6 text-center text-xs text-gray-400 space-y-2"> -->
+  <!-- <p> -->
+    <!-- © 2025 <strong>FACILE TECH 38</strong> – Tous droits réservés.<br> -->
+    <!-- SIRET : 82432041000031 – Entreprise individuelle. -->
+  <!-- </p> -->
+
+  <!-- <p class="space-x-4"> -->
+    <!-- <button onclick="openModal('mentions')" class="hover:text-[#60A5FA] underline">Mentions légales</button> -->
+    <!-- <span>•</span> -->
+    <!-- <button onclick="openModal('cgv')" class="hover:text-[#60A5FA] underline">Conditions générales de vente</button> -->
+  <!-- </p> -->
+<!-- </footer> -->
+
+<footer class="border-t border-gray-700 mt-16 pt-6 text-center text-xs text-gray-400 space-y-2 leading-relaxed">
+  <p>
+    © 2025 <strong>FACILE TECH 38</strong> – Tous droits réservés.<br>
+    SIRET : 824 320 410 00031 – Entreprise individuelle.
+  </p>
+  <p class="space-x-4">
+    <button onclick="openModal('mentions')" class="hover:text-[#60A5FA] underline">Mentions légales</button>
+    <span>•</span>
+    <button onclick="openModal('cgv')" class="hover:text-[#60A5FA] underline">Conditions générales de vente</button>
+  </p>
+</footer>
 
 
-    <div class="mt-10 text-center text-xs text-gray-400 border-t border-gray-700 pt-4">
-      © 2025 FACILE TECH 38 – Tous droits réservés.
-    </div>
+
+
   </footer>
 
   <!-- Animations au scroll -->
@@ -623,5 +665,115 @@ window.addEventListener("scroll", () => {
     }, { threshold: 0.1 });
     sections.forEach(section => observer.observe(section));
   </script>
+  
+<!-- ⚖️ Modale Mentions légales -->
+<div id="modal-mentions" class="modal fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 transition-opacity duration-300">
+  <div class="modal-content bg-white rounded-2xl max-w-2xl w-11/12 p-6 relative shadow-2xl overflow-y-auto max-h-[80vh] transform transition-all duration-300 scale-95 opacity-0">
+    <h2 class="text-2xl font-bold text-[#1E3A8A] mb-4 text-center">Mentions légales</h2>
+
+    <div class="text-gray-700 space-y-2 text-sm sm:text-base">
+      <p><strong>Nom de l’entreprise :</strong> FACILE TECH 38</p>
+      <p><strong>Statut juridique :</strong> Entreprise individuelle (micro)</p>
+      <p><strong>SIRET :</strong> 82432041000031</p>
+      <p><strong>Adresse :</strong> 7 rue casimir brenier, 38120 ST EGREVE</p>
+      <p><strong>Email :</strong> contact@faciletech38.fr</p>
+      <p><strong>Téléphone :</strong> 06 00 00 00 00</p>
+      <p><strong>Responsable de publication :</strong> Rafael LANA</p>
+      <p><strong>Hébergeur :</strong> OVH – 2 rue Kellermann, 59100 Roubaix, France</p>
+      <p class="mt-4 text-sm text-gray-500 italic">
+        Conformément à la loi « Informatique et Libertés », vous disposez d’un droit d’accès, de rectification et de suppression des données vous concernant.
+      </p>
+    </div>
+
+    <div class="text-center mt-6">
+      <button onclick="closeModal('mentions')" class="bg-[#1E3A8A] text-white px-6 py-2 rounded-xl hover:bg-[#2563EB] transition-colors duration-200 shadow-md">
+        Fermer
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 🧾 Modale CGV -->
+<div id="modal-cgv" class="modal fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 transition-opacity duration-300">
+  <div class="modal-content bg-white rounded-2xl max-w-2xl w-11/12 p-6 relative shadow-2xl overflow-y-auto max-h-[80vh] transform transition-all duration-300 scale-95 opacity-0">
+    <h2 class="text-2xl font-bold text-[#1E3A8A] mb-4 text-center">Conditions Générales de Vente (CGV)</h2>
+
+    <div class="text-gray-700 space-y-2 text-sm sm:text-base">
+      <p><strong>Article 1 – Prestations :</strong> FACILE TECH 38 propose des services d’assistance, de formation et de dépannage informatique à domicile pour les séniors.</p>
+      <p><strong>Article 2 – Tarifs :</strong> Les tarifs affichés sur le site sont exprimés en euros TTC. Toute prestation supplémentaire fera l’objet d’un devis ou d’un accord préalable.</p>
+      <p><strong>Article 3 – Paiement :</strong> Le règlement s’effectue à la fin de la prestation, par chèque, espèces ou virement bancaire.</p>
+      <p><strong>Article 4 – Déplacement :</strong> Les déplacements sont inclus dans un rayon de 15 km autour de Grenoble. Au-delà, un supplément peut être appliqué.</p>
+      <!-- <p><strong>Article 5 – Réduction fiscale :</strong> Les prestations à domicile peuvent ouvrir droit à un crédit d’impôt de 50 % (selon la législation en vigueur).</p> -->
+      <p><strong>Article 5 – Données personnelles :</strong> FACILE TECH 38 s’engage à ne collecter que les données nécessaires au traitement des demandes clients et à ne pas les transmettre à des tiers.</p>
+      <p class="mt-4 text-sm text-gray-500 italic">
+        En sollicitant nos services, le client reconnaît avoir pris connaissance des présentes conditions générales de vente et les accepte sans réserve.
+      </p>
+    </div>
+
+    <div class="text-center mt-6">
+      <button onclick="closeModal('cgv')" class="bg-[#1E3A8A] text-white px-6 py-2 rounded-xl hover:bg-[#2563EB] transition-colors duration-200 shadow-md">
+        Fermer
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 🎬 Script modales -->
+<script>
+  function openModal(type) {
+    const modal = document.getElementById('modal-' + type);
+    const content = modal.querySelector('.modal-content');
+
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+
+    // Animation d’ouverture
+    requestAnimationFrame(() => {
+      content.classList.remove('scale-95', 'opacity-0');
+      content.classList.add('scale-100', 'opacity-100');
+    });
+
+    // Fermer en cliquant en dehors
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal(type);
+    });
+  }
+
+  function closeModal(type) {
+    const modal = document.getElementById('modal-' + type);
+    const content = modal.querySelector('.modal-content');
+
+    // Animation de fermeture
+    content.classList.add('scale-95', 'opacity-0');
+    content.classList.remove('scale-100', 'opacity-100');
+
+    setTimeout(() => {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }, 200);
+  }
+</script>
+
+<script>
+  document.getElementById('logo').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+<script>
+  const slides = document.querySelectorAll('#hero-slideshow .slide');
+  let current = 0;
+
+  setInterval(() => {
+    slides[current].classList.remove('opacity-100');
+    slides[current].classList.add('opacity-0');
+
+    current = (current + 1) % slides.length;
+
+    slides[current].classList.remove('opacity-0');
+    slides[current].classList.add('opacity-100');
+  }, 5000); // ⏱️ changement toutes les 5 secondes
+</script>
+
 </body>
 </html>
